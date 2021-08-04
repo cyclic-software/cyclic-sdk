@@ -2,7 +2,7 @@
   "name": "cyclic-api",
   "version": "0.0.1",
   "description": "Cyclic API framework",
-  "main": "src/index.js",
+  "main": "./lib/cjs/index.js",
   "engines": {
     "node": ">=14.0.0"
   },
