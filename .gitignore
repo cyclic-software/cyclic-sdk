@@ -118,4 +118,4 @@ dist
 .pnp.*
 
 # Transpiled javascript or module distribution
-lib
+lib/
