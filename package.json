@@ -1,14 +1,16 @@
 {
   "name": "@cyclic.sh/sdk",
   "version": "0.0.2",
+  "type": "commonjs",
   "description": "Cyclic.sh SDK framework to build simple services.",
   "homepage": "https://github.com/cyclic-software/cyclic-api#readme",
   "main": "./lib/cjs/index.js",
-  "module": "./lib/esm/index.js",
+  "x-module": "./lib/esm/index.js",
   "engines": {
     "node": ">=14.0.0"
   },
   "bin": {
+    "cy": "bin/serve",
     "cyclic-serve": "bin/run"
   },
   "files": [
@@ -21,12 +23,14 @@
     "lint": "eslint ./src",
     "prepublishOnly": "npm run tsc",
     "test": "jest",
-    "tsc": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json"
+    "tsc": "tsc -p tsconfig-cjs.json",
+    "x-tsc": "tsc -p tsconfig-cjs.json && (true || tsc -p tsconfig.json)"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/express": "^4.17.13",
     "@types/jest": "^26.0.24",
     "@types/node": "^16.4.11",
     "@typescript-eslint/eslint-plugin": "^4.29.2",
