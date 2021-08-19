@@ -1,6 +1,6 @@
 {
   "name": "@cyclic/api",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Cyclic API framework",
   "homepage": "https://github.com/cyclic-software/cyclic-api#readme",
   "main": "./lib/cjs/index.js",
