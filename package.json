@@ -1,7 +1,7 @@
 {
-  "name": "@cyclic/api",
+  "name": "@cyclic.sh/sdk",
   "version": "0.0.2",
-  "description": "Cyclic API framework",
+  "description": "Cyclic.sh SDK framework to build simple services.",
   "homepage": "https://github.com/cyclic-software/cyclic-api#readme",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
