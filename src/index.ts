@@ -1,6 +1,11 @@
-import { add } from './add.js'
-import { subtract } from './subtract.js'
+
+
+function run() {
+  console.log('done with run')
+}
+
+console.log('index.ts entered and about to exit')
+
 export {
-  add,
-  subtract
+  run
 }

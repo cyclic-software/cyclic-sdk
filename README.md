@@ -10,6 +10,6 @@ Node module for running the cyclic api framework.
 
 ### Building
 
-`pnpm install`
+`npm install`
 
 ### Publishing

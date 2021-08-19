@@ -2,24 +2,37 @@
   "name": "@cyclic/api",
   "version": "0.0.1",
   "description": "Cyclic API framework",
+  "homepage": "https://github.com/cyclic-software/cyclic-api#readme",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
   "engines": {
     "node": ">=14.0.0"
   },
+  "bin": {
+    "cyclic-serve": "bin/run"
+  },
   "files": [
-    "lib/"
+    "/bin",
+    "/lib"
   ],
   "scripts": {
+    "build": "npm run clean && npm run tsc",
+    "clean": "rm -rf ./lib",
     "prepublishOnly": "npm run tsc",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "tsc": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/jest": "^26.0.24",
+    "@types/node": "^16.4.11",
+    "jest": "^27.0.6",
     "pkgfiles": "^2.3.2",
     "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
   }
 }
