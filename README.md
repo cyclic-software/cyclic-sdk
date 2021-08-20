@@ -1,10 +1,10 @@
-# @cyclic/api
+# @cyclic.sh/sdk
 
-Node module for running the cyclic api framework.
+Cyclic api framework. Build vanilla javascript APIs without the headache.
 
 ## Installing
 
-`npm install @cyclic/api`
+`npm install @cyclic.sh/sdk`
 
 ## For those developing this module
 
@@ -13,3 +13,10 @@ Node module for running the cyclic api framework.
 `npm install`
 
 ### Publishing
+
+```
+npm version patch
+git push
+git push --tags
+npm publish --access=public
+```
