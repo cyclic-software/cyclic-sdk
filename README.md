@@ -15,7 +15,7 @@ mkdir api
 echo "module.exports.all = async (req,res) => {
   console.log(req.body)
   res.set('Content-Type','application/json')
-  res.body = {headers: req.headers, params: req.params, env: req.envs}
+  res.body = {headers: req.headers, params: req.params, env: process.env}
 }" > api/index.js
 npx cy
 ```
