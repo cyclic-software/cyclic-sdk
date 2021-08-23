@@ -1,6 +1,6 @@
 {
   "name": "@cyclic.sh/sdk",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Cyclic.sh SDK framework to build simple services.",
   "homepage": "https://github.com/cyclic-software/cyclic-api#readme",
   "main": "./lib/server.js",
